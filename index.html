@@ -1,0 +1,60 @@
+<!doctype html>
+<li><strong>Power:</strong> 220 hp @ 6000 rpm</li>
+<li><strong>Torque:</strong> 260 Nm</li>
+<li><strong>0-100 km/h:</strong> 6.8 s</li>
+<li><strong>Top Speed:</strong> 245 km/h</li>
+<li><strong>Fuel Economy:</strong> 7.6 L / 100 km (combined)</li>
+</ul>
+</div>
+</section>
+
+
+<section id="gallery" class="container gallery">
+<h2>Gallery</h2>
+<div class="gallery-grid">
+<img src="https://source.unsplash.com/400x300/?car,front" alt="Car front" />
+<img src="https://source.unsplash.com/400x300/?car,interior" alt="Car interior" />
+<img src="https://source.unsplash.com/400x300/?car,side" alt="Car side" />
+<img src="https://source.unsplash.com/400x300/?car,drive" alt="Car driving" />
+</div>
+</section>
+
+
+<section id="contact" class="contact container">
+<h2>Contact</h2>
+<p>Interested in a test drive? Send us a message and we'll get back to you.</p>
+<form class="contact-form" onsubmit="return false;">
+<label>
+Name
+<input type="text" placeholder="Your name" required />
+</label>
+<label>
+Email
+<input type="email" placeholder="you@example.com" required />
+</label>
+<label>
+Message
+<textarea placeholder="Tell us what you're interested in" required></textarea>
+</label>
+<button class="btn">Send Message</button>
+</form>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year"></span> Aurora GT. All rights reserved.</p>
+</div>
+</footer>
+
+
+<script>
+// small script for responsive nav and current year
+document.getElementById('year').textContent = new Date().getFullYear();
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.main-nav');
+toggle.addEventListener('click', () => nav.classList.toggle('open'));
+</script>
+</body>
+</html>
