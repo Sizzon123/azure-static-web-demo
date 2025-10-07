@@ -1,0 +1,62 @@
+/* Basic reset */
+.logo{font-weight:700;letter-spacing:0.6px;color:white;text-decoration:none}
+.logo span{color:#ffd166}
+.main-nav{display:flex;gap:1rem;align-items:center}
+.main-nav a{color:white;text-decoration:none;padding:0.4rem 0.6rem;border-radius:6px}
+.main-nav a.btn{background:#ffd166;color:#081827}
+.nav-toggle{display:none;background:transparent;border:0;color:white;font-size:1.35rem}
+
+
+/* Hero */
+.hero{padding:2.2rem 0;background:linear-gradient(180deg,rgba(11,58,94,0.05),transparent)}
+.hero-inner{display:flex;gap:2rem;align-items:center}
+.hero-copy{flex:1}
+.hero-copy h1{font-size:2.2rem;margin-bottom:0.6rem}
+.hero-copy p{opacity:0.9;margin-bottom:1rem}
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:8px;background:#0b3a5e;color:white;text-decoration:none}
+.btn.large{padding:0.9rem 1.2rem;font-size:1rem}
+.hero-image{flex:1}
+
+
+/* Features */
+.features{padding:2rem 0}
+.features h2{text-align:center;margin-bottom:1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:white;border-radius:10px;padding:1rem;box-shadow:0 6px 18px rgba(13,26,40,0.06)}
+.card h3{margin-bottom:0.4rem}
+
+
+/* Specs */
+.specs{background:#f7fbff;padding:2rem 0}
+.spec-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.6rem}
+.spec-list li{padding:0.4rem 0}
+
+
+/* Gallery */
+.gallery{padding:2rem 0}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.6rem}
+
+
+/* Contact */
+.contact{padding:2rem 0}
+.contact-form{display:grid;gap:0.6rem;max-width:640px}
+.contact-form label{display:flex;flex-direction:column;gap:0.4rem}
+.contact-form input,.contact-form textarea{padding:0.6rem;border:1px solid #d6e1ee;border-radius:6px}
+.contact-form textarea{min-height:120px}
+
+
+/* Footer */
+.site-footer{background:#081827;color:#cfe8ff;padding:1rem 0;text-align:center}
+
+
+/* Responsive */
+@media (max-width:900px){
+.hero-inner{flex-direction:column}
+}
+
+
+@media (max-width:720px){
+.main-nav{position:absolute;top:64px;right:1rem;background:rgba(7,23,36,0.95);padding:1rem;border-radius:8px;display:flex;flex-direction:column;gap:0.6rem;transform-origin:top right;display:none}
+.main-nav.open{display:flex}
+.nav-toggle{display:block}
+}
