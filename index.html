@@ -1,60 +1,118 @@
 <!doctype html>
-<li><strong>Power:</strong> 220 hp @ 6000 rpm</li>
-<li><strong>Torque:</strong> 260 Nm</li>
-<li><strong>0-100 km/h:</strong> 6.8 s</li>
-<li><strong>Top Speed:</strong> 245 km/h</li>
-<li><strong>Fuel Economy:</strong> 7.6 L / 100 km (combined)</li>
-</ul>
-</div>
-</section>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurora GT — Modern Compact Sport</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Aurora<span>GT</span></a>
+      <nav class="main-nav">
+        <a href="#features">Features</a>
+        <a href="#specs">Specs</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Aurora GT</h1>
+          <p>Redefining the drive: compact. powerful. precise. The Aurora GT brings sporty handling and modern comfort to every commute.</p>
+          <a href="#specs" class="btn large">Explore Specs</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://source.unsplash.com/800x500/?car,sport" alt="Aurora GT front view" />
+        </div>
+      </div>
+    </section>
 
-<section id="gallery" class="container gallery">
-<h2>Gallery</h2>
-<div class="gallery-grid">
-<img src="https://source.unsplash.com/400x300/?car,front" alt="Car front" />
-<img src="https://source.unsplash.com/400x300/?car,interior" alt="Car interior" />
-<img src="https://source.unsplash.com/400x300/?car,side" alt="Car side" />
-<img src="https://source.unsplash.com/400x300/?car,drive" alt="Car driving" />
-</div>
-</section>
+    <section id="features" class="container features">
+      <h2>Key Features</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Turbocharged Engine</h3>
+          <p>Efficient turbo engine delivering instant throttle response and 220 hp.</p>
+        </article>
+        <article class="card">
+          <h3>Adaptive Suspension</h3>
+          <p>Smart suspension that adapts to road conditions for a smooth and engaging ride.</p>
+        </article>
+        <article class="card">
+          <h3>Driver Assist</h3>
+          <p>Lane assist, adaptive cruise control, and automatic emergency braking included.</p>
+        </article>
+        <article class="card">
+          <h3>Premium Interior</h3>
+          <p>Comfortable sport seats, ambient lighting, and intuitive infotainment.</p>
+        </article>
+      </div>
+    </section>
 
+    <section id="specs" class="specs">
+      <div class="container">
+        <h2>Technical Specifications</h2>
+        <ul class="spec-list">
+          <li><strong>Engine:</strong> 2.0L Turbocharged Inline-4</li>
+          <li><strong>Power:</strong> 220 hp @ 6000 rpm</li>
+          <li><strong>Torque:</strong> 260 Nm</li>
+          <li><strong>0-100 km/h:</strong> 6.8 s</li>
+          <li><strong>Top Speed:</strong> 245 km/h</li>
+          <li><strong>Fuel Economy:</strong> 7.6 L / 100 km (combined)</li>
+        </ul>
+      </div>
+    </section>
 
-<section id="contact" class="contact container">
-<h2>Contact</h2>
-<p>Interested in a test drive? Send us a message and we'll get back to you.</p>
-<form class="contact-form" onsubmit="return false;">
-<label>
-Name
-<input type="text" placeholder="Your name" required />
-</label>
-<label>
-Email
-<input type="email" placeholder="you@example.com" required />
-</label>
-<label>
-Message
-<textarea placeholder="Tell us what you're interested in" required></textarea>
-</label>
-<button class="btn">Send Message</button>
-</form>
-</section>
-</main>
+    <section id="gallery" class="container gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://source.unsplash.com/400x300/?car,front" alt="Car front" />
+        <img src="https://source.unsplash.com/400x300/?car,interior" alt="Car interior" />
+        <img src="https://source.unsplash.com/400x300/?car,side" alt="Car side" />
+        <img src="https://source.unsplash.com/400x300/?car,drive" alt="Car driving" />
+      </div>
+    </section>
 
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Interested in a test drive? Send us a message and we'll get back to you.</p>
+      <form class="contact-form" onsubmit="return false;">
+        <label>
+          Name
+          <input type="text" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Message
+          <textarea placeholder="Tell us what you're interested in" required></textarea>
+        </label>
+        <button class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-<footer class="site-footer">
-<div class="container">
-<p>&copy; <span id="year"></span> Aurora GT. All rights reserved.</p>
-</div>
-</footer>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Aurora GT. All rights reserved.</p>
+    </div>
+  </footer>
 
-
-<script>
-// small script for responsive nav and current year
-document.getElementById('year').textContent = new Date().getFullYear();
-const toggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.main-nav');
-toggle.addEventListener('click', () => nav.classList.toggle('open'));
-</script>
+  <script>
+    // small script for responsive nav and current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
 </body>
 </html>
